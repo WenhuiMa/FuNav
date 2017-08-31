@@ -57,17 +57,17 @@ namespace move_base
         
     }
 
-    void MoveBase::executeCycle(geometry_msgs::PoseStamped& goal,std::vector<geometry_msgs::PoseStamped>& plan)
+    bool MoveBase::executeCycle(geometry_msgs::PoseStamped& goal,std::vector<geometry_msgs::PoseStamped>& plan)
     {
-        1.get robot current pose
-        2.action server publish the feedback
-        3.check if stucked or deflected
-        4.check the observation(sensordata)
-        5.if(got plan)...
-        6.switch the state:
-            a).waiting for task
-            b).controlling
-            c).hault
+        // 1.get robot current pose
+        // 2.action server publish the feedback
+        // 3.check if stucked or deflected
+        // 4.check the observation(sensordata)
+        // 5.if(got plan)...
+        // 6.switch the state:
+        //     a).waiting for task
+        //     b).controlling
+        //     c).hault
     }
 
 };
